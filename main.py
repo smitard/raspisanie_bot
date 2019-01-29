@@ -68,7 +68,7 @@ def main_message():
         main_message =  a[0][0] + '  ' + tomorrowdate.strftime("%d.%m.%Y") +'\n\nЗнаменатель\n\n1. ' + a[0][1] + '\n2. ' + a[0][2] + '\n3. ' + a[0][3][1] + '\n4. ' + a[0][4]
     bot.send_message('-1001322716320', main_message)
 
-schedule.every().day.at("00:40").do(main_message)
+schedule.every().day.at("00:42").do(main_message)
 while True:
     schedule.run_pending()
 bot.polling(none_stop=True, interval = 0)
